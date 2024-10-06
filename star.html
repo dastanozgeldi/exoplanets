@@ -216,18 +216,18 @@
           // .append("p").text("Number of Planets in Solar System: " + d.pl_pnum).style("color", "white");
         } else {
           d3.select("h2 span")
-          //.append("text")
-          //.text(function(d,i){return d.star_name + d.star_temp})
-          .text("")
-          .append("p").text("Click on this planet for the habitable zone.").style("color", "yellow")
-          .append("p").text("Planet Name: " + d.key).style("color", "white")
-          .append("p").text("Distance From Earth (Light-years): " + d.light_years).style("color", "white")          
-          .append("p").text("Planet Temperature (K): " + d.planet_temp).style("color", "white")
-          .append("p").text("Planet Radius (Earth radii): " + d.radius).style("color", "white")
-          .append("p").text("Number of Planets in Solar System: " + d.pl_pnum).style("color", "white")          
-          .append("p").text("Orbital Period (days): " + d.orbital_period).style("color", "white")
-          .append("p").text("Discovery Year: " + d.discovery_year).style("color", "white")
-          .append("p").text("Discovery Method: " + d.discovery_method).style("color", "white");
+            //.append("text")
+            //.text(function(d,i){return d.star_name + d.star_temp})
+            .text("")
+            .append("p").text("Click on this planet for the habitable zone.").style("color", "yellow").style("font-size", "20px")
+            .append("p").text("Planet Name: " + d.key).style("color", "white").style("font-size", "18px")
+            .append("p").text("Distance From Earth (Light-years): " + d.light_years).style("color", "white").style("font-size", "18px")          
+            .append("p").text("Planet Temperature (K): " + d.planet_temp).style("color", "white").style("font-size", "18px")
+            .append("p").text("Planet Radius (Earth radii): " + d.radius).style("color", "white").style("font-size", "18px")
+            .append("p").text("Number of Planets in Solar System: " + d.pl_pnum).style("color", "white").style("font-size", "18px")          
+            .append("p").text("Orbital Period (days): " + d.orbital_period).style("color", "white").style("font-size", "18px")
+            .append("p").text("Discovery Year: " + d.discovery_year).style("color", "white").style("font-size", "18px")
+            .append("p").text("Discovery Method: " + d.discovery_method).style("color", "white").style("font-size", "18px");
         }
       }
 
