@@ -3,6 +3,28 @@
     <link href="solar_system.css" type="text/css" rel="stylesheet">
     <title>Orbit Layout Modes</title>
     <meta charset="utf-8" />
+    <style>
+      .top-right-link {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 1000;
+      }
+      .top-right-link a {
+        font-family: monospace;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+      .top-right-link a:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+    </style>
   </head>
   <!-- Place the javascript source code links here -->
   <script src="src/d3.min.js"></script>
@@ -291,6 +313,9 @@
   
   <!-- run the makeViz() code on page load -->
   <body onload=makeViz()>
+    <div class="top-right-link">
+      <a href="https://skymap123.netlify.app" target="_blank">View Stars</a>
+    </div>
     <h2><span></span></h2>
       <!-- add the star background -->
       <div class="stars"></div>
